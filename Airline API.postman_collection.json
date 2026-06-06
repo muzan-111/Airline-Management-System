@@ -1,0 +1,434 @@
+{
+	"info": {
+		"_postman_id": "fe582c42-ec0d-4220-8572-52d3f76b6b74",
+		"name": "Airline API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44421267",
+		"_collection_link": "https://muzan-828416.postman.co/workspace/muzan's-Workspace~bd0e32fc-f9a4-4206-8e3e-7b589bed3654/collection/44421267-fe582c42-ec0d-4220-8572-52d3f76b6b74?action=share&source=collection_link&creator=44421267"
+	},
+	"item": [
+		{
+			"name": "Airline creation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"EgyptAir\",\r\n  \"address\": \"Cairo Airport\",\r\n  \"contact_person\": \"Muzan\",\r\n  \"phone_number\": \"010000000\",\r\n  \"current_balance\": 500000.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/airline/index.php/airlines",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"airlines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"transaction_type\": \"Buy\",\r\n  \"amount\": 20000.00,\r\n  \"description\": \"Aircraft Maintenance\",\r\n  \"airline_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/airline/index.php/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transactions Summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/airline/index.php/transactions/summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"transactions",
+						"summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Creation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ahmed Ali\",\r\n  \"birth_date\": \"1995-04-12\",\r\n  \"gender\": \"Male\",\r\n  \"position\": \"Pilot\",\r\n  \"airline_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/airline/index.php/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Aircraft Registeration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"model\": \"Boeing 777\",\r\n  \"capacity\": 300,\r\n  \"airline_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/airline/index.php/aircraft",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"aircraft"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Route Creation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"origin\": \"CAI\",\r\n  \"destination\": \"DXB\",\r\n  \"distance\": 2400,\r\n  \"classification\": \"International\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/airline/index.php/routes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"routes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"transaction_type\": \"Buy\",\r\n  \"amount\": 20000.00,\r\n  \"description\": \"Aircraft Maintenance Costs\",\r\n  \"airline_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/airline/index.php/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Airlines retrieving",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/airline/index.php/airlines",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"airlines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Airline By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/airline/index.php/airlines?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"airlines"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Airline By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/airline/index.php/airlines?name=EgyptAir",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"airlines"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "EgyptAir"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Airline",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"contact_person\": \"Zeyad Sayed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/airline/index.php/airlines?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"airlines"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Airline",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/airline/index.php/airlines?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"airlines"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Employees By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/airline/index.php/employees?name=Ahmed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Ahmed"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET All Aircraft",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/airline/index.php/aircraft",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"aircraft"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET All Routes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/airline/index.php/routes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"routes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign Aircraft to Route",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"aircraft_id\": 2,\r\n  \"route_id\": 1,\r\n  \"departure_time\": \"2026-07-10 08:00:00\",\r\n  \"arrival_time\": \"2026-07-10 11:30:00\",\r\n  \"ticket_price\": 450.00,\r\n  \"passengers_count\": 150\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/airline/index.php/assign-route",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"airline",
+						"index.php",
+						"assign-route"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
